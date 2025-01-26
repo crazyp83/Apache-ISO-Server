@@ -33,7 +33,8 @@ EOL
 sudo a2ensite iso
 
 # Restart Apache
-sudo /etc/init.d/apache2 reload
+#sudo /etc/init.d/apache2 reload
+apachectl graceful
 
 #Define the base URL
 BASE_URL="https://releases.rancher.com/harvester/v1.2.1/harvester-v1.2.1"

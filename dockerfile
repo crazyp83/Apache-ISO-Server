@@ -1,7 +1,7 @@
 FROM httpd:2.4
 RUN apt-get update && \
     apt-get full-upgrade && \
-    apt-get install -y sudo
+    apt-get install -y sudo wget
 #COPY ./public-html/ /usr/local/apache2/htdocs/
 VOLUME /var/www/html/iso
 COPY iso.sh /usr/local/bin/
