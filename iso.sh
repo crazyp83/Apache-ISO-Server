@@ -36,7 +36,7 @@ sudo a2ensite iso
 sudo service apache2 restart
 
 # Print the message if successful
-if system status apache2; then
+if system apache2 status; then
  echo "Apache is successfully configured to serve ISO files from ${ISO_DIR}"
 else
  echo "Failed to setup apache2. It is probably your fault! Fix it!"
